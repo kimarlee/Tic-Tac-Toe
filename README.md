@@ -13,7 +13,16 @@ Moves are listed in order, alternating between X and O
 To prepare the data, we utilized a PySpark SQL database to hold the data that we would use for training and testing of the model. Initially, we used the RandomForest model for our dataset. This gave adequate accuracy for Win or Loss conditions, but did not account for Tie outcomes. From here, we further cleaned the data and changed models to decision tree. Additionally, we increased the depth of the decision tree from 10 to 20 to account for a larger set of possible game outcomes.
 
 ### Additional Learnings and Conclusions
-When analyzing the data, we see patterns emerge in the gameplay. It is much more advantageous to have the first move in a game like this with so few moves. 
+When analyzing the data, we see patterns emerge in the gameplay. 
+![image](https://github.com/user-attachments/assets/d170d405-e081-49bf-85e8-75b67addd800)
+
+It is much more advantageous to have the first move in a game like this with so few moves. 
+
+![image](https://github.com/user-attachments/assets/2fb16696-7bcd-4340-b2f4-24603471cd2d)
+
+![image](https://github.com/user-attachments/assets/b5db3fb4-87e6-46b5-8dbc-04c7aab72034)
+
+
 Utilizing what we learned here with machine learning, we think it would be interesting to scale up to more complex board games such as Connect 4 or sports with more complex decision making like baseball. We also see the potential with learning this children's game in exploring early childhood development and logical thinking in children.
 
 
