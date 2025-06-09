@@ -4,7 +4,17 @@ This project is meant to demonstrate how machine learning can be used to analyze
 
 
 ### Methodology
+
+This dataset contains 255,168 rows, where each row represents a complete Tic-Tac-Toe game, capturing the full sequence of moves made by both players. The structure supports game-by-game analysis and is ideal for studying strategies, move patterns, and outcomes.
+Key Features:
+Player X always goes first.
+Moves are listed in order, alternating between X and O 
+
 To prepare the data, we utilized a PySpark SQL database to hold the data that we would use for training and testing of the model. Initially, we used the RandomForest model for our dataset. This gave adequate accuracy for Win or Loss conditions, but did not account for Tie outcomes. From here, we further cleaned the data and changed models to decision tree. Additionally, we increased the depth of the decision tree from 10 to 20 to account for a larger set of possible game outcomes.
+
+### Additional Learnings and Conclusions
+When analyzing the data, we see patterns emerge in the gameplay. It is much more advantageous to have the first move in a game like this with so few moves. 
+Utilizing what we learned here with machine learning, we think it would be interesting to scale up to more complex board games such as Connect 4 or sports with more complex decision making like baseball. We also see the potential with learning this children's game in exploring early childhood development and logical thinking in children.
 
 
 ### Reference for data source
